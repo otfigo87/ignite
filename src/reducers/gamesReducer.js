@@ -3,7 +3,7 @@ const initState = {
     newGames: [],
     upcoming: []
 
-}
+};
 
 const gamesReducer = (state=initState, action) => {
     switch(action.type) {
