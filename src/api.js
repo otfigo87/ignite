@@ -30,7 +30,14 @@ const nextYear = `${currentYear + 1}-${currentMonth}-${currentDay}`;
 //Popular Games
 const popular_games = `games?
 key=b264c90265c6416499db1e68fb3f5faa&
-dates=${lastYear},${currentDate}&ordering=-rating&page_size=12`
-
+dates=${lastYear},${currentDate}&ordering=-rating&page_size=12`;
+const upcoming_games = `games?
+key=b264c90265c6416499db1e68fb3f5faa&
+dates=${currentDate},${nextYear}&ordering=-added&page_size=12`;
+const newGames = `games?
+key=b264c90265c6416499db1e68fb3f5faa&
+dates=${lastYear},${currentDate}&ordering=-released&page_size=12`;
 
 export const popularGamesURL = () => `${base_url}${popular_games}`;
+export const upcomingGamesURL = () => `${base_url}${upcoming_games}`;
+export const newGamesURL = () => `${base_url}${newGames}`;
