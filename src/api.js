@@ -41,3 +41,11 @@ dates=${lastYear},${currentDate}&ordering=-released&page_size=12`;
 export const popularGamesURL = () => `${base_url}${popular_games}`;
 export const upcomingGamesURL = () => `${base_url}${upcoming_games}`;
 export const newGamesURL = () => `${base_url}${newGames}`;
+
+//GAMES DETAILS
+export const gameDetailsURL = (game_id) => `${base_url}games?
+key=b264c90265c6416499db1e68fb3f5faa&/${game_id}`;
+//GamesScreenShots
+export const gameScreenshotURL = (game_id) => `${base_url}games?
+key=b264c90265c6416499db1e68fb3f5faa&/${game_id}/screenshots`;
+

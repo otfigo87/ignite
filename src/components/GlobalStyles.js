@@ -10,6 +10,17 @@ const GlobalStyles = createGlobalStyle`
       font-family: 'Montserrat', sans-serif;
       width: 100%;
   }
+  html{
+      &::-webkit-scrollbar{
+          width: 0.5rem;
+      }
+      &::-webkit-scrollbar-thumb{
+          background-color: gray;
+      }
+      &::-webkit-scrollbar-track{
+        background-color: white;
+    }
+  }
   h2 {
       font-size: 3rem;
       font-family: 'Abril Fatface', cursive;
